@@ -14,7 +14,6 @@ using Treinamento.Angular.Api.Security;
 
 namespace Treinamento.Angular.Api.Controllers
 {
-    [Route("api/[controller]")]
     public class UserController : Controller
     {
         private readonly DataContext _context;
@@ -34,7 +33,7 @@ namespace Treinamento.Angular.Api.Controllers
         }
 
         [HttpPost]
-        [Route("authenticate")]
+        [Route("v1/authenticate")]
         [AllowAnonymous]
         public async Task<IActionResult> Post([FromForm] User user)
         {
