@@ -1,0 +1,8 @@
+/Users/5by5mini3/Projects/treinamento-angular-api/bin/Debug/netcoreapp1.1/treinamento-angular-api.deps.json
+/Users/5by5mini3/Projects/treinamento-angular-api/bin/Debug/netcoreapp1.1/treinamento-angular-api.runtimeconfig.json
+/Users/5by5mini3/Projects/treinamento-angular-api/bin/Debug/netcoreapp1.1/treinamento-angular-api.runtimeconfig.dev.json
+/Users/5by5mini3/Projects/treinamento-angular-api/bin/Debug/netcoreapp1.1/treinamento-angular-api.dll
+/Users/5by5mini3/Projects/treinamento-angular-api/bin/Debug/netcoreapp1.1/treinamento-angular-api.pdb
+/Users/5by5mini3/Projects/treinamento-angular-api/obj/Debug/netcoreapp1.1/treinamento-angular-api.AssemblyInfo.cs
+/Users/5by5mini3/Projects/treinamento-angular-api/obj/Debug/netcoreapp1.1/treinamento-angular-api.dll
+/Users/5by5mini3/Projects/treinamento-angular-api/obj/Debug/netcoreapp1.1/treinamento-angular-api.pdb
