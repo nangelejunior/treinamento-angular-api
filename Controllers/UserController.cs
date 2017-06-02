@@ -1,5 +1,3 @@
-
-
 using System;
 using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
@@ -17,13 +15,13 @@ using Treinamento.Angular.Api.Security;
 namespace Treinamento.Angular.Api.Controllers
 {
     [Route("api/[controller]")]
-    public class AccountController : Controller
+    public class UserController : Controller
     {
         private readonly DataContext _context;
         private readonly JwtIssuerOptions _jwtOptions;
         private readonly JsonSerializerSettings _serializerSettings;
 
-        public AccountController(IOptions<JwtIssuerOptions> jwtOptions, DataContext context)
+        public UserController(IOptions<JwtIssuerOptions> jwtOptions, DataContext context)
         {
             _context = context;
             _jwtOptions = jwtOptions.Value;
