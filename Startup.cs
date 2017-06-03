@@ -102,8 +102,8 @@ namespace treinamento_angular_api
 
             app.UseMvc();
 
-            context.Users.Add(new User { Id = Guid.NewGuid(), Username = "neuclair.junior", Password = "123", Role = "Admin" });
-            context.Users.Add(new User { Id = Guid.NewGuid(), Username = "felipe.milhossi", Password = "123", Role = "Admin" });
+            context.Users.Add(new User { Id = Guid.NewGuid(), Username = "neuclair.junior", Password = "admin123", Role = "Admin" });
+            context.Users.Add(new User { Id = Guid.NewGuid(), Username = "felipe.milhossi", Password = "admin123", Role = "Admin" });
             context.SaveChanges();
         }
     }
