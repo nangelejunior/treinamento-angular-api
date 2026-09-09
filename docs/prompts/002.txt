@@ -1,0 +1,12 @@
+Papel: Você é um desenvolvedor em .NET senior, e quero que você não crie abstrações desnecessárias.
+
+Tarefa:
+- Execute o plano de migração docs/plans/@UPGRADE_PLAN.md
+
+A aplicação estará definida como pronto somente quando dotnet build passar e todas as rotas a seguir responderem 200 OK.
+- POST /v1/authenticate
+- POST /v1/accounts
+- GET /v1/accounts
+- GET /v1/accounts/{id}
+- PUT /v1/accounts/{id}
+- DELETE /v1/accounts/{id}

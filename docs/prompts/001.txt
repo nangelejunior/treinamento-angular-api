@@ -1,0 +1,21 @@
+Papel: Você é um desenvolvedor em .NET senior, e quero que você não crie abstrações desnecessárias.
+
+Tarefa:
+- Realizar o upgrade da aplicação de .NET Core 1.0 para .NET 10.0.
+
+Restrições:
+- Todo código precisar ser desenvolvido em inglês, como identificadores, rotas, arquivos, pastas, comentários e etc.
+- Deve seguir o padrão de Clean Architecture, com camadas definidas em pastas e um único projeto:
+  - Domain/ (entidades, enum, sem dependência de nada).
+  - Application/ (caso de uso, interface, DTOs e deve depender somente de Domain).
+  - Controllers/ (camada de apresentação que deve depender apenas do Application).
+  - SOLID é obrigatório seguir em todo o projeto, um caso de uso por consulta (SPR), o controller depende apenas das abstrações criadas (DIP), interfaces pequenas e específicas (ISP), sem regras de negócio no controller.
+  - Controller com primary constructor, request e response com sealed record; nunca expor entidade de domínio fora do Application.
+  - Paginação via um padrão único, crie em Application/Common um arquivo chamado PageResult. O padrão de paginação do PageSize é 20, com o máximo de 100 itens, e o Page default é 1.
+  - Validação com DataAnnotations sem adicionar pacotes.
+  - Todo método Async deve receber e passar CancellationToken.
+  - Utilize o padrão Repository esconder os detalhes de como os dados são salvos ou buscados.
+  - Mantenha a versão do EF Core compatível com .NET 10.
+  - Todos os dados devem ser armazenados em memória.
+
+A aplicação estará definida como pronto somente quando `dotnet build! passar e o POST /v1/authenticate, POST v1/accounts, GET v1/accounts, PUT v1/accounts/{id}, GET v1/accounts/{id} e DELETE v1/accounts{id} responderem com 200 OK.
