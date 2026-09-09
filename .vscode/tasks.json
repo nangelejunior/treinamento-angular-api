@@ -1,15 +1,16 @@
 {
-    "version": "0.1.0",
-    "command": "dotnet",
-    "isShellCommand": true,
-    "args": [],
+    "version": "2.0.0",
     "tasks": [
         {
-            "taskName": "build",
+            "label": "build",
+            "command": "dotnet",
+            "type": "process",
             "args": [
-                "${workspaceRoot}/treinamento-angular-api.csproj"
+                "build",
+                "${workspaceFolder}/training-angular-api.csproj",
+                "/property:GenerateFullPaths=true",
+                "/consoleLoggerParameters:NoSummary"
             ],
-            "isBuildCommand": true,
             "problemMatcher": "$msCompile"
         }
     ]
